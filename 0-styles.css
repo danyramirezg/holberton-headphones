@@ -276,15 +276,21 @@ body {
   background-image: url(images/headphones_hero_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1400px;
+  max-width: 1000px;
+  /* border-left: auto;
+  border-right: auto;  */
+  padding-left: auto;
+  padding-right: auto; 
 }
 
 .main-container {
   /* position: absolute; */
-  width: 1400px;
-  height: 800px;
-  left: 0px;
-  top: 0px;
+  max-width: 1400px;
+  /* height: 800px; */
+  /* border-left: auto;
+  border-right: auto; */
+  padding-left: auto;
+  padding-right: auto;     
 }
 
 h3 {
