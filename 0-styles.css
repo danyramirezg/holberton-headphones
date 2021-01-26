@@ -251,7 +251,8 @@ button {
 }
 
 button:hover {
-  filter: brightness(0.8);
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 /* Layout
@@ -283,7 +284,7 @@ button:hover {
 .header-container {
   display: flex;
   justify-content: space-between;
-  margin: -5rem 0 0;
+  margin: -3rem 0 0;
 }
 
 .header-logo a img {
@@ -446,7 +447,7 @@ nav .nav-link {
 /* Responsive
           ============================= */
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   :root {
     --nav-item-margin: 0;
   }
