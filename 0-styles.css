@@ -168,11 +168,27 @@ template {
   --color-button: #ff6565;
 }
 
-/** HEADER **/
+/* Base
+  ============================= */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* Header
+  ============================= */
 
 .header {
   position: absolute;
-  width: 1000.39px;
+  width: 1000px;
   height: 32px;
   left: 200.61px;
   top: 27.76px;
@@ -183,11 +199,43 @@ template {
   justify-content: space-between;
 }
 
-.header-logo img{
+input {
+  display: none;
+}
+
+.header-logo img {
   margin-top: 10px;
   width: 60%;
   height: 60%;
 }
+
+/* @media (max-width: 767px) {
+  :root {
+    --header-padding: 2rem 0 0;
+  }
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+  }
+  .header .menu-icon {
+    display: block;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .header-logo {
+    flex-basis: 70%;
+  }
+}
+
+@media (min-width: 481px), (max-width: 767px) {
+  .header-logo {
+    flex-basis: 79%;
+  }
+} */
+
+/* Navbar
+  ============================= */
 
 .nav .nav-link {
   text-decoration: none;
@@ -216,6 +264,12 @@ template {
 .navbar-menu .nav-item {
   list-style: none;
   margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
 }
 
 body {
@@ -267,7 +321,6 @@ h5 {
 p {
   font-family: var(--base-font-family);
   font-style: var(--font-style);
-  /* font-weight: var(--font-weight); */
   color: var(--color-white);
   font-size: 16px;
   line-height: 26px;
@@ -298,28 +351,16 @@ p {
   cursor: pointer;
 }
 
-
-/* Hamburguer */ 
-@media(max-width: 767px){
- /* .main-container .text1{
-   flex-direction: column; */
-  :root{
-    margin: 0;
-  }   
-  .navbar-menu {
-    display: none;
-    flex: 1;
- }
-}
+/* Hamburguer */
 
 /* prueba-hamburguer */
-
 
 .header .menu-icon {
   cursor: pointer;
   padding: 2.5rem;
   position: relative;
   user-select: none;
+  /* display: none; */
 }
 
 .header .menu-icon .navicon {
@@ -348,4 +389,17 @@ p {
 
 .header .menu-icon .navicon::after {
   top: -0.7rem;
+}
+
+.header .header-container .menu-btn:checked  {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 480px) {
+   .header .menu-icon{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
