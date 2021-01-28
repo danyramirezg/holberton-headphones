@@ -249,6 +249,7 @@ button {
   line-height: 18px;
   filter: var(--button-filter);
   margin-bottom: 80px;
+  text-decoration: none;
 }
 
 button:hover {
@@ -260,16 +261,19 @@ button:hover {
 
 .container-body {
   background-image: url(images/headphones_hero_1.jpg);
+  /* width: 100%; */
+  /* background-size: cover; */
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  max-width: 100%;
 }
+
 .container-body,
 .section-hero {
   height: 800px;
-  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
 }
 
 .header-container {
@@ -288,13 +292,14 @@ button:hover {
   color: var(--color-navy);
   background: var(--color-white);
   text-align: center;
+  padding: 110px;
   /* margin-top: 1000px; */
 }
 
 .section-what-we-do .section-title {
   font-size: 32px;
-  font-weight: var(--font-weight-bold);
   line-height: 37px;
+  font-weight: var(--font-weight-bold);
 }
 
 .section-what-we-do .card-title {
@@ -303,8 +308,13 @@ button:hover {
 }
 
 .section-what-we-do .section-paragraph {
-  /* top: calc(50% - 104px/2 + 40px); */
+  font-weight: normal;
   font-size: 16px;
+  line-height: 26px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 .section-what-we-do .section-tagline {
@@ -315,20 +325,24 @@ button:hover {
   color: var(--color-salmon);
   font-size: 100px;
 }
+
 .dark {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-image: url(images/headphones_hero_2.jpg);
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 650px;
+  height: 80vh;
+  /* max-width: 1400px; */
+  /* padding-top: 40px; */
 }
 
 .dark .section-inner {
-  margin-top: -120px;
+  /* margin-top: -120px; */
 }
 
 .dark .section-title {
@@ -338,14 +352,18 @@ button:hover {
   font-size: 32px;
   text-align: center;
 }
-.dark .section-paragraph {
+.dark .section-body .section-inner p.section-paragraph {
   color: var(--color-white);
   font-family: var(--font-family-base);
   font-size: 16px;
   text-align: center;
   line-height: 26px;
-  margin-left: 9%;
-  margin-right: 9%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* padding-left: 120px; */
+  padding-right: 120px;
+  margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 .pentagon {
@@ -398,7 +416,8 @@ ul.row {
 }
 
 ul.row-our {
-  margin: -1rem;
+  /* margin: -1rem; */
+  /* margin: 10vh; */
   padding: 0;
   list-style: none;
 }
@@ -408,8 +427,8 @@ ul.row-our {
 }
 
 .our-col-1-4 {
-    width: calc((100% / 4) - 2rem);
-  }
+  width: calc((100% / 4) - 2rem);
+}
 
 /* Header ============================= */
 
@@ -476,11 +495,13 @@ ul.row-our {
   text-align: var(--section-header-align);
   width: 39.8rem;
   min-height: 35vh;
+  padding-top: 220px;
 }
 
 .section-header {
   font-weight: var(--font-weight-bold);
-  /*margin: 0; */
+  margin-bottom: 0;
+  font-size: 32px;
   font-family: var(--font-family-base);
 }
 
@@ -598,14 +619,29 @@ nav .nav-link {
     width: 100%;
   }
   .icon-container {
-    margin-left: 160px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
     /* height: 2000px; */
+    min-width: 500px;
   }
   .row-our {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 3.5fr 1fr;
+  }
+
+  .section-what-we-do .section-paragraph {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  ul.row-our {
+    margin-left: 11vh;
+  }
+
+  .dark .section-paragraph {
+    padding-left: 7vh;
   }
 }
 
@@ -666,20 +702,20 @@ nav .nav-link {
     flex-direction: column;
   }
 
+  .row-our {
+    align-items: center;
+  }
+
   .our-col-1-4 {
     margin-top: 180px;
   }
 
-  /* .icon-container{
-      /* background: var(--color-navy); */
-      /* height: -5000px;
-  } */ 
+  .dark {
+    height: 120vh;
+  }
 
-  /* .pentagon{
-     
-  } */
-
-  /* .icon-container{
-   display: flex;
-   } */
+  ul.row-our {
+    margin-left: -7vh;
+    margin-top: -20vh;
+  }
 }
