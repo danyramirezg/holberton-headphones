@@ -339,7 +339,7 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   height: auto;
-  padding-bottom: 300px;
+  padding-bottom: 70px;
 }
 
 .dark .section-title {
@@ -597,11 +597,12 @@ nav .nav-link {
 }
 
 .icon-container {
-  margin: 10%;
+  /* margin: 10%; */
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .dark .pentagon {
@@ -642,6 +643,7 @@ nav .nav-link {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    flex-wrap: wrap;
   }
   .row-our {
     display: grid;
@@ -732,7 +734,7 @@ nav .nav-link {
     height: auto;
     /* padding-left: 10vw;
     padding-right: 10vw; */
-    padding-bottom: 300px;
+    padding-bottom: 10px;
   }
 
   /* .dark .card-title{
@@ -769,7 +771,28 @@ nav .nav-link {
     /* width: 100px; */
   }
 
+  .dark .pentagon{
+    margin: 0;
+    
+  }
+
+  .pentagon .section-tagline-text{
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: -50;
+  }
+
+  .pentagon .section-tagline{
+    font-size: 40px;
+    /* margin: 3px; */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    /* top: 10px; */
+  }
+
+
   .pentagon {
+    /* margin: 0; */
     /* width: 100px; */
   }
   .dark .icon-container {
